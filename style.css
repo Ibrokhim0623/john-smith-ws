@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.4s linear;
+}
+
+header{
+    padding: 0;
+    width: 100%;
+    background: #fff;
+}
+.nav{
+    padding: 15px 150px 20px 150px;
+}
+.nav h1{
+    color: #272832;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+}
+.container{
+    position: relative;
+}
+.container1{
+    background: url(./images/IMAGE1.png) no-repeat;
+    height: 540px;
+}
+.container2{
+    background: url(./images/img1.jpg) no-repeat;
+    height: 540px;
+}
+.container3{
+    background: url(./images/2.jpg) no-repeat;
+    height: 540px;
+}
+.container .background-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 110, 110, 0.4);
+}
+.container .content{
+    position: absolute;
+    z-index: 3;
+    padding: 173px 0 43px 150px;
+}
+.container .content h1{
+    color: #fff;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+.container .content h2{
+    color: #fff;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 44px;
+}
+.container .content .btns{
+    padding-top: 43px;
+}
+.container .content .btns button{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 18px 28px;
+    margin-right: 15px;
+}
+.container .content .btns button:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+.header{
+    position: relative;
+}
+.header .dots{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+}
+.header .dots .dot{
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+}
+.header .dots .dot.active{
+    background: #fff;
+}
+.help{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 150px;
+    background: #EDEDED;
+}
+.help .task{
+    flex: 1 1 30rem;
+}
+.task h3{
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    color: #696969;
+}
+.task p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #696969;
+    margin-bottom: 16px;
+}
+.task .block1{
+    width: 100%;
+    background: #fff;
+}
+.task .block1:not(:last-child){
+    margin-bottom: 18px;
+}
+.task .block1 .block-in1{
+    width: 100%;
+    background: #D9D9D9;
+    padding: 12px 0 12px 18px;
+}
+.task .block1 .block-in2{
+    width: 90%;
+    background: #D9D9D9;
+    padding: 12px 0 12px 18px;
+}
+.task .block1 .block-in3{
+    width: 60%;
+    background: #D9D9D9;
+    padding: 12px 0 12px 18px;
+}
+.task .block1 .block-in4{
+    width: 40%;
+    background: #D9D9D9;
+    padding: 12px 0 12px 18px;
+}
+.projects .heading{
+    padding: 70px 0 33px 150px;
+}
+
+.projects .heading h3{
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    color: #696969;
+}
+.projects1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+}
+.projects2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+}
+.img1{
+    position: relative;
+}
+.img1 .content{
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    bottom: 0;
+    padding: 10px;
+}
+.img1 .content h5{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+.img1 .content p{
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.49);
+    margin-top: 6px;
+}
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+.contact {
+    display: flex;
+    padding: 80px 150px;
+    background: #EDEDED;
+}
+.contact .task{
+    flex: 1 1 30rem;
+}
+.contact .task:not(:last-child){
+    padding-right: 50px;
+}
+.contact .task p{
+    margin-top: 35px;
+}
+.contact .task input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.contact .task .input1{
+    background: #F7F7F7;
+}
+.contact .task textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.contact .task button{
+    background: #D1D1D1;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 44px;
+}
+.contact .task button:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+footer h6{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #C4C4C4;
+}
+footer .messengers a{ 
+    color: #000;
+}
+footer .messengers a:hover i{
+    transform: scale(1.1);
+}
+footer .messengers a:not(:last-child){
+    margin-right: 24px;
+}
+
+@media(max-width: 1200px){
+    .nav {
+        padding: 15px 100px 20px 100px;
+    }
+    .container .content {
+        padding: 120px 0 0px 100px;
+    }
+    .help {
+        padding: 50px 100px;
+    }
+    .projects .heading {
+        padding: 40px 0 25px 100px;
+    }
+    .img1 .content {
+        padding: 5px;
+    }
+    .contact {
+        padding: 50px 100px;
+    }
+    
+    footer {
+        padding: 20px 100px;
+    }
+}
+@media (max-width: 991px){
+    .nav {
+        padding: 15px 50px 20px 50px;
+    }
+    .container .content {
+        padding: 70px 0 0px 50px;
+    }
+    .help {
+        padding: 20px 50px;
+    }
+    .projects .heading {
+        padding: 20px 0 15px 50px;
+    }
+    .contact {
+        padding: 20px 50px;
+    }
+    footer {
+        padding: 20px 50px;
+    }
+}
+@media(max-width: 768px){
+    .nav {
+        padding: 10px;
+    }
+    .container .content {
+        padding: 80px 10px;
+    }
+    .container .content h2 {
+        font-size: 36px;
+    }
+    .container .content .btns {
+        padding-top: 30px;
+    }
+    .container .content .btns button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .help {
+        padding: 20px 10px;
+    }
+    .projects .heading {
+        padding: 15px 10px;
+    }
+    .contact {
+        padding: 20px 10px;
+        display: grid;
+    }
+    .contact .task p {
+        margin-top: 5px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+}
+@media(max-width: 576px){
+    .projects1, .projects2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact .task button {
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media(max-width: 320px){
+    .container .content h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .container .content .btns {
+        padding-top: 10px;
+        display: grid;
+    }
+    .container .content .btns button{
+        margin-top: 15px;
+    }
+    .block1 h4{
+        font-size: 14px;
+    }
+    .contact .task:not(:last-child) {
+        padding-right: 0;
+    }
+    footer .messengers a{
+        margin-left: 10px;
+    }
+}
